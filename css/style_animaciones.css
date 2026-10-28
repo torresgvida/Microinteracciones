@@ -1,0 +1,353 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        background-image: url(img/p_new0258_s_new02583.png);
+    }
+
+    .cuerpo {
+        margin: 0 auto;
+        text-align: center;
+        width: 900px;
+        height: 1000px;
+        max-width: 900px;
+        font-family: "Poppins";
+        font-size: larger;
+        background-color: #FBCFE8;
+        margin-top: -100px;
+        padding-top: 100px;
+        border: 5px solid #fff1f2;
+    }
+
+    .background {
+        width: 900px;
+        height: 200px;
+        background-image: url(img/Fondo.png);
+        background-repeat: no-repeat;
+        background-size: 900px;
+        padding-bottom: 500px;
+        z-index: 0;
+        position: absolute;
+    }
+
+    /*HEADER*/
+    .header {
+        text-align: center;
+        max-width: 900px;
+        width: 750px;
+        font-size: 60px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-style: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        color: #8489ff;
+        background-color: #fff1f2;
+        padding: 10px 0;
+
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+
+        animation: scale-in 0.65s 
+        cubic-bezier(0.8, 0, 0.2, 1) both;
+    }
+
+    @keyframes scale-in {
+        from {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(1.25);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    /*ROTAR*/
+    .rotar {
+        width: 200px;
+        animation: rotarAnim1 3s infinite linear;
+        z-index: 2;
+        position: absolute;
+        margin: 0 50px;
+    }
+
+    @keyframes rotarAnim1 {
+        0% {
+            transform: rotate(0deg);
+        }
+ 
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .palito {
+        width: 300px;
+        height: 200px;
+        z-index: 1;
+        position:absolute;
+        margin: 100px 0;
+    }
+
+    .ROTARSECTION {
+        z-index: 2;
+        position: absolute;
+        padding-top: 200px;
+    }
+
+    /*ESCALAR Y MOVER*/
+
+    .escalar {
+        height: .1px;
+        text-align: center;
+        margin-bottom: 50px;
+        animation: escalarAnim1 2s infinite ease-in-out;
+        margin-left: 300px;
+    }
+
+    .escalar img {
+        height: 180px;
+        position: absolute;
+    }
+
+    @keyframes escalarAnim1 {
+        0% {
+            transform: scale(0.9);
+        }
+ 
+        100% {
+            transform: scale(1.5);
+        }
+    }
+
+    .mover {
+        height: .1px;
+        text-align: center;
+        margin-bottom: 5px;
+        
+        animation: moverAnim1 2s infinite ease-in-out;
+    }
+
+    .mover img{
+        height: 120px;
+        position: absolute;
+        margin-top: 50px;
+    }
+ 
+    @keyframes moverAnim1 {
+        0% {
+            transform: translateX(10px);
+        }
+ 
+        100% {
+            transform: translateX(140px);
+        }
+    }
+
+    .yumyum {
+        z-index: 3;
+        position: absolute;
+        padding-top: 250px;
+        margin-left: 300px;
+    }
+
+    /*COLOR Y TODO JUNTO*/
+    .colorin {
+    width: 50px;
+    height: 200px;
+    }
+    
+    .colorin img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        /* Usamos solo rotación de tono, sin brightness(0) para que no se vuelva negro */
+        filter: hue-rotate(0deg);
+        animation: cambiarTono 4s infinite linear;
+
+        z-index: 3;
+        position: absolute;
+        padding-top: 20px;
+    }
+    
+    @keyframes cambiarTono {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+    .solesito {
+        width: 1300px;
+        height: 100px;
+    }
+    
+    .solesito {
+        animation: escalarAnim 3s infinite ease-in-out,
+                rotarAnim 3s infinite linear;
+                margin-left: -100px;
+                position:relative;
+                top:-120px
+                
+    }
+    
+    /* La imagen interna se encarga únicamente de cambiar el tono de color */
+    .solesito img {
+        width: 200px;
+        height: 150px;
+        margin-bottom: 100px;
+       
+        object-fit: contain;
+        filter: hue-rotate(0deg);
+        margin-bottom: 0px;
+        animation: cambiarTono 4s infinite linear,
+        moverAnim 4s infinite ease-in-out;        
+    }
+    
+    /* Asegúrate de tener definidos estos keyframes al final de tu archivo */
+    @keyframes cambiarTono {
+        0% { filter: hue-rotate(0deg); }
+        100% { filter: hue-rotate(360deg); }
+    }
+    
+    @keyframes escalarAnim {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.6); }
+        100% { transform: scale(1); }
+    }
+    
+    
+    /* Animación para que se desplace hacia la derecha y regrese */
+    @keyframes moverAnim {
+        0% {
+            transform: translateX(0px); /* Posición inicial */
+        }
+        50% {
+            transform: translateX(50px); /* ¡Se desplaza 150 píxeles hacia la derecha! */
+        }
+        100% {
+            transform: translateX(0px); /* Regresa al inicio */
+        }
+    }
+
+
+    /*BOTON*/
+    .boton {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: top;
+        width: 900px;
+        max-width: 900px;
+        z-index: 6;
+        position: absolute;
+        padding: 15px 0;
+
+        background: #bfd4ff;
+        box-sizing: border-box;
+        border: 5px solid #fff1f2;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        margin-top: 300px;
+    }
+
+    .boton a {
+        color: #8489ff;
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        text-align: center;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*TEXTOS*/
+
+    .txt1 {
+        z-index: 7;
+        position: absolute;
+        padding: 0 10px;
+
+        margin-top: -250px;
+        margin-left: 200px;
+
+        color: #8489ff;
+        background: #fff1f2;
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+    }
+
+    .txt2 {
+        z-index: 7;
+        position: absolute;
+        padding: 0 10px;
+
+        margin-top: 100px;
+        margin-left: 20px;
+
+        color: #8489ff;
+        background: #fff1f2;
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+    }
+
+    .txt3 {
+        z-index: 7;
+        position: absolute;
+        padding: 0 10px;
+
+        margin-top: 100px;
+        margin-left: 730px;
+
+        color: #8489ff;
+        background: #fff1f2;
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+    }
+
+    .txt4 {
+        z-index: 7;
+        position: absolute;
+        padding: 0 10px;
+
+        margin-top: 50px;
+        margin-left: 350px;
+
+        color: #8489ff;
+        background: #fff1f2;
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+    }
+
+    .txt5 {
+        z-index: 7;
+        position: absolute;
+        padding: 0 10px;
+
+        margin-top: -250px;
+        margin-left: 650px;
+
+        color: #8489ff;
+        background: #fff1f2;
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+    }

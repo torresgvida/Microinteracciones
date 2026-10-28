@@ -1,0 +1,229 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
+    body {
+        background-image: url(img/p_new0258_s_new02583.png);
+    }
+
+    .cuerpo {
+        margin: 0 auto;
+        text-align: center;
+        width: 900px;
+        height: 1800px;
+        max-width: 900px;
+        font-family: "Poppins";
+        font-size: larger;
+        background-color: #FBCFE8;
+        margin-top: -100px;
+        padding-top: 100px;
+        border: 5px solid #fff1f2;
+    }
+
+    /*HEADER*/
+    .header1 {
+        text-align: center;
+        max-width: 900px;
+        width: 750px;
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-style: bold;
+        margin-left: auto;
+        margin-right: auto;
+        color: #8489ff;
+        background-color: #fff1f2;
+
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+
+        animation: scale-in 0.65s 
+        cubic-bezier(0.8, 0, 0.2, 1) both;
+    }
+
+    .header2 {
+        text-align: center;
+        max-width: 900px;
+        width: 750px;
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-style: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        color: #8489ff;
+        background-color: #fff1f2;
+
+        box-sizing: border-box;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+
+        animation: scale-in 0.65s 
+        cubic-bezier(0.8, 0, 0.2, 1) both;
+    }
+
+    @keyframes scale-in {
+        from {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(1.25);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    /*CONCEPTOS*/
+
+    .conceptos {
+        text-align: center;
+        max-width: 900px;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inline-block {
+    background: #fff1f2;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 365px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+
+    animation: clip-in 0.8s 
+        cubic-bezier(0.95, 0, 0.03, 1.01)
+        0s both;
+    }
+    
+    @keyframes clip-in {
+            from {
+                clip-path: polygon(50% 0%, 50% 0%, 
+                50% 100%, 50% 100%);
+            }
+            to {
+                clip-path: polygon(0% 0%, 100% 0%, 
+                100% 100%, 0% 100%);
+            }
+        }
+
+
+    .inline-block h2 {
+        text-align: center;
+        font-weight: bolder;
+        font-family: "Montserrat", sans-serif;
+        font-size: large;
+    }
+
+    .inline-block p {
+        text-align: justify;
+        font-family: "Montserrat", sans-serif;
+        font-size: smaller;
+    }
+
+    .inline-block ul {
+        text-align: justify;
+        font-family: "Montserrat", sans-serif;
+        font-size: smaller;
+    }
+
+    /*SLIDER*/
+        #slideshow {
+        text-align: center;
+        overflow: hidden;
+        height: 500px;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .slide-wrapper {
+        width: 6000px;
+        animation: slide 15s infinite ease-in-out;
+      }
+      
+      
+      .imgUno {
+        background-color: rgb(216, 41, 243);
+        float: left;
+        height: 500px;
+        width: 1000px;
+      }
+      
+      .imgDos {
+        background-color: coral;
+        float: left;
+        height: 500px;
+        width: 1000px;
+      }
+      
+      .imgTres {
+        background-color: greenyellow;
+        float: left;
+        height: 500px;
+        width: 1000px;
+      }
+      
+      .imgCuatro {
+        background-color: brown;
+        float: left;
+        height: 500px;
+        width: 1000px;
+      }
+
+      .imgCinco {
+        background-color: azure;
+        float: left;
+        height: 500px;
+        width: 1000px;
+      }
+      
+      @keyframes slide {
+        20% {margin-left: 0px;}
+        30% {margin-left: -1050px;}
+        40% {margin-left: -1050px;}
+        50% {margin-left: -2050px;}
+        60% {margin-left: -2050px;}
+        70% {margin-left: -3050px;}
+        80% {margin-left: -3050px;}
+        100% {margin-left: -4050px;}
+      }
+
+
+    /*BOTON*/
+    .boton {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background: #bfd4ff;
+        padding: 15px;
+        vertical-align: top;
+        width: 900px;
+        margin-top: 100px;
+        box-sizing: border-box;
+        border: 5px solid #fff1f2;
+        border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+    }
+
+    .boton a {
+        font-size: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #8489ff;
+
+    }
